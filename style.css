@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+  height: 100vh;
+  width: 100%;
+  background-color: black;  
+}
+.back{
+    height: 100vh;
+    width: 100%;  
+ }
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+.hero{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    border: 1px solid white;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0;
+}
+.nav img{
+    height: 60px;
+}
+.navleft, .navright{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.navleft a, .navright a{
+    color: white;
+    font-family: "Nunito";
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.heroHeading{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.headLeft{
+    min-width: 50%;
+    background-color: yellow;
+}
+.headLeft .elem h1{
+    font-family: "Kajiro";
+}
+.headRight{
+    min-width: 25%;
+    background-color: green;
+}
