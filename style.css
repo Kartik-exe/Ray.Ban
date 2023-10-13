@@ -11,13 +11,18 @@ html , body{
 .main{
   height: 100vh;
   width: 100%;
-  background-color: black;  
 }
 .back{
     height: 100vh;
     width: 100%;  
- }
+}
+ .back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .top{
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -30,14 +35,13 @@ html , body{
     width: 80%;
     height: 100vh;
     max-width: 1920px;
-    border: 1px solid white;
 }
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 40px 0;
+    padding: 10px 0;
 }
 .nav img{
     height: 60px;
@@ -48,6 +52,7 @@ html , body{
     gap: 50px;
 }
 .navleft a, .navright a{
+    pointer-events: all;
     color: white;
     font-family: "Nunito";
     font-size: 13px;
@@ -57,21 +62,64 @@ html , body{
 }
 .heroHeading{
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 0;
-    transform: translate(0%,-50%);
+    transform: translate(0%,-40%);
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 .headLeft{
     min-width: 50%;
-    background-color: yellow;
+}
+.headLeft .elem{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.headLeft .elem h1:nth-child(1){
+    top: 0;
 }
 .headLeft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
     font-family: "Kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
 }
 .headRight{
-    min-width: 25%;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 24%;
+    color: white;
+    font-family: "Nunito";
+}
+.headRight p{
+    font-size: 11px;
+    font: weight 300;
+    text-align: right;
+}
+.headLeft button{
+    pointer-events: all;
+    font-family: "Kajiro";
+    margin-top: 2vw;
+    padding: .8vw 2vw;
+    font-size: 3vw;
+}
+.headRight .imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-image: url(https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBvcnRyYWl0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+}
+.headRight p:nth-child(3){
+    margin-bottom: 50px;
 }
